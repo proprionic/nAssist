@@ -1,3 +1,2 @@
 # Electron virtual assistant
-
-## Made for a cutom module in waybar.
+<h5>Made for a cutom module in waybar.</h5>
