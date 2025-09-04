@@ -1,0 +1,23 @@
+
+button {
+  -webkit-app-region: no-drag;
+}
+
+body {
+    margin: 0;
+    background: #4D4C8A; /* semi-transparent */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.chat-input {
+    margin-top: 150px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: rgba(50, 50, 50, 0.8);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-app-region: drag;
+}

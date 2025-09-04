@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Assistant Chat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: rgba(25, 25, 25, 0.9);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    #chat {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .message {
+      max-width: 80%;
+      padding: 8px 12px;
+      border-radius: 12px;
+      word-wrap: break-word;
+    }
+
+    .user {
+      align-self: flex-end;
+      background: #4c8bf5;
+    }
+
+    .bot {
+      align-self: flex-start;
+      background: #3a3a3a;
+    }
+
+    #input-area {
+      display: flex;
+      padding: 8px;
+      background: rgba(0, 0, 0, 0.3);
+      border-top: 1px solid #444;
+    }
+
+    #input {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background: #222;
+      color: white;
+    }
+
+    #send {
+      margin-left: 8px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 8px;
+      background: #4c8bf5;
+      color: white;
+      cursor: pointer;
+    }
+
+    #send:hover {
+      background: #3a6fd5;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat"></div>
+
+  <div id="input-area">
+    <input id="input" type="text" placeholder="Type a message..." />
+    <button id="send">Send</button>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
